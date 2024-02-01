@@ -1,0 +1,10 @@
+si se esta usando la varible global window o como en el caso que me paso window.location al momento de construir
+la aplicacion se rompoe porque se esta ejecutando en el entorno del servidor y no existe para eso se 
+puede verificar antes de usarla if typeof window !== undefined para saber siexiste window (tambien puede
+afectar a dependencias que esten usando window como useRouter que usa location para la funcion router.push antes
+de esta hay que validar si existe window) 
+
+los archivos que conectan a la base de datos hay que generarlos antes de la build
+"build": "prisma generate && next build" por ejemplo
+porque cuando desplegamos a versel se instalan las dependencias y despues se compila next y antes de compilar
+hay que genrar los archivo que conecten a la base de datos

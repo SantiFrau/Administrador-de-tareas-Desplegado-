@@ -38,7 +38,7 @@ export default function Create(){
    
     return(
        
-        <form onSubmit={handleClick} action="#" className="bg-opacity-60 md:w-1/2 w-2/3 bg-gray-900 w-full flex flex-col gap-3 justify-center items-center h-max p-5 rounded-lg md:m-5">
+        <form onSubmit={handleClick} action="#" className="mt-5 md:mt-24 bg-opacity-60 md:w-1/2 w-2/3 bg-gray-900 w-full flex flex-col gap-3 justify-center items-center  p-5 rounded-lg ">
       <input
        
         id="name"

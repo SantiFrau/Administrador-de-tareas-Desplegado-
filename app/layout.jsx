@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body className="bg-gradient-to-b from-gray-500 via-blue-700 to-blue-800 max-h-full min-h-screen text-white ">
       
         <ContextoProvider>
-        <nav className="bg-opacity-60 w-full flex flex-row  items-center justify-between gap-5 bg-gray-800 p-2">
+        <nav className="md:fixed bg-opacity-60 p-3 rounded-xl ml-3 mt-3 md:mt-0 md:ml-0 md:rounded-none w-full flex flex-row  items-center justify-between gap-5 bg-gray-800">
           <div className="flex flex-row gap-3 px-2 items-center">
             <AccountCircleIcon style={{fontSize:34}}></AccountCircleIcon>
           <Nombre>
@@ -32,7 +32,8 @@ export default function RootLayout({ children }) {
           <Link className="border-b p-3 rounded-xl hover:text-zinc-400 hover:border-zinc-400" href="/login">Cambiar cuenta</Link>
           </div>
         </nav>
-        <div className="w-full flex flex-col gap-3 items-center justify-center mt-2">
+
+        <div className="w-full flex flex-col gap-3 items-center justify-center ml-3 mt-3 md:mt-0 md:ml-0">
         {children}
         </div>
         </ContextoProvider>

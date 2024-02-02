@@ -45,7 +45,7 @@ export default function Tarea({ params }) {
   }
 
   return (
-    <form onSubmit={Actualizar} action="#" className="bg-opacity-60 md:w-1/2 w-2/3 bg-gray-900 w-full flex flex-col gap-3 justify-center items-center h-max p-5 rounded-lg md:m-5">
+    <form onSubmit={Actualizar} action="#" className="md:mt-24 mt-5 bg-opacity-60 md:w-1/2 w-2/3 bg-gray-900 w-full flex flex-col gap-3 justify-center items-center h-max p-5 rounded-lg ">
       <input
         value={tarea.nombre}
         onChange={handleInputChange}

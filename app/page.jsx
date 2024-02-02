@@ -25,7 +25,7 @@ export default  function Home() {
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify({userId})})
         
-        console.log(userId)
+       
     if(res.ok){
      const res_tareas = await res.json()
      setTareas(res_tareas)
@@ -45,7 +45,7 @@ export default  function Home() {
   }
 
   return (
-   <div className="flex flex-col w-full items-center justify-center gap-5">
+   <div className="flex flex-col w-full items-center justify-center gap-5 md:mt-24 mt-5" >
     <h1 className="text-3xl font-bold p-5">Lista de Tareas</h1>
     <section className="bg-opacity-70 p-5 w-full md:w-4/6 flex flex-col bg-gray-900 gap-3 rounded-lg">
       {

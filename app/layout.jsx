@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className="bg-gradient-to-b from-gray-500 via-blue-700 to-blue-800 h-screen text-white ">
+      <body className="bg-gradient-to-b from-gray-500 via-blue-700 to-blue-800 max-h-full min-h-screen text-white ">
       
         <ContextoProvider>
         <nav className="bg-opacity-60 w-full flex flex-row  items-center justify-between gap-5 bg-gray-800 p-2">
